@@ -1,0 +1,743 @@
+
+    html,
+body {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+header,
+main,
+footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+#menu {
+    width: 100%;
+    height: 66px;
+    line-height: 66px;
+}
+
+.opt {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo {
+
+    float: left;
+}
+
+#booki-lgo {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+}
+
+.lien {
+
+    text-decoration: none;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.lien:hover {
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+}
+
+.search {
+    height: 150px;
+}
+
+#f {
+    font-family: 'Raleway', sans-serif;
+}
+
+#d {
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    display: flex;
+
+}
+
+.ic {
+    align-items: center;
+    /* position: relative; */
+    border-radius: 10px 0 0 10px;
+    /* right: -4px; */
+    width: 40px;
+    height: 38px;
+    border: none;
+    outline: none;
+    background-color: #d9d9d9;
+
+}
+
+.fa-solid {
+    font-size: 1rem;
+    padding-left: 40%;
+    padding-top: 25%;
+}
+
+input {
+    border: 0.1px solid rgba(66, 64, 64, 0.171);
+    outline: none;
+    color: black;
+    padding: 0 15px;
+    width: 10rem;
+}
+
+button {
+    width: 100px;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-loop {
+    display: none;
+}
+
+
+
+/* FILTRES */
+
+#filtres {
+    display: flex;
+    align-items: first baseline;
+}
+
+.fas.fa-money-bill-wave {
+    font-size: 0.80rem;
+    padding-right: 8px;
+    color: #0065FC;
+
+}
+
+.fas.fa-dog {
+    color: #0065FC;
+    font-size: 0.80rem;
+    padding-right: 7px;
+
+}
+
+.fas.fa-heart {
+    color: #0065FC;
+    font-size: 0.80rem;
+    padding-right: 10px;
+}
+
+.fas.fa-person {
+
+    color: #0065FC;
+    font-size: 0.80rem;
+    padding-right: 8px;
+}
+
+.ece span {
+    font-size: .90rem;
+}
+
+.ece {
+    width: 160px;
+    display: block;
+    padding: 10px 3px;
+    font-size: 12px;
+    border-radius: 50px;
+    margin: 0 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    display: inline-block;
+}
+
+.ecef span {
+    font-size: .90rem;
+}
+
+.ecef {
+
+    display: block;
+    font-size: 12px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 0 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    display: inline-block;
+}
+
+.ecea {
+    width: 100px;
+    display: inline-block;
+}
+
+.item:hover {
+    background-color: #0065fc1a;
+}
+
+.ece:hover {
+    background-color: #0065fc1a;
+}
+
+.item {
+    margin-top: 1rem;
+}
+
+/* resultat */
+
+.Info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Info .fas {
+    color: #0065FC;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* main */
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Appart */
+
+
+.Appart-liste {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Appart-liste>div {
+
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+
+
+
+
+
+
+
+.ville {
+    flex-basis: 66%;
+
+}
+
+.populaire {
+    flex-basis: 33%;
+}
+
+
+.ville>p {
+
+    font-weight: bold;
+
+    padding-top: 15px;
+
+}
+
+/* CARDS */
+
+.Appart-cards {
+    /* display: flex;
+     flex-wrap: wrap;
+     gap: 2.5rem;
+     justify-content: space-around;
+     margin-bottom: 1rem; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.a img {
+    width: 100%;
+}
+
+.Appart-liste .Populaire-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+
+}
+
+
+.Appart-liste {
+    flex-basis: 100%;
+}
+
+
+/* Hébergement CARD */
+
+.Card {
+    /* background-color: white;
+     border-radius: 1rem;
+     padding: 0.3rem;
+     width: 265px;
+     height: 245px;
+     box-shadow: 0 0 16px rgba(0, 0, 0, 0.089);
+     flex-grow: 1; */
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 16px #0000002e;
+    flex-grow: 1;
+    height: 245px;
+    transition: all 0.2s;
+    flex-basis: 30%;
+    min-width: 15rem;
+
+}
+
+.Card img {
+    /* border-radius: 1rem 1rem 0 0;
+     width: 15rem;
+     width: 100%;
+     height: 60%;
+     object-fit: cover;
+     object-position: unset; */
+    border-radius: 1rem 1rem 0 0;
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Card h3,
+.Card p,
+/* .Pop-desc p, */
+.Pop-desc h3 {
+    margin: 0.2rem;
+}
+
+.Appart-cards .étoile {
+    color: #d9d9d9;
+}
+
+.etoile-bleu {
+    color: #0065FC;
+}
+
+.Populaire-cards .étoile {
+    color: #d9d9d9;
+}
+
+/* Populaire  Card*/
+.populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.populaire h3 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.populaire h3 i {
+    color: #0065FC;
+}
+
+.populaire h3,
+.ville h3 {
+    margin-top: 0;
+}
+
+.Pop-Card {
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.Populaire-cards .Card img {
+    width: 45%;
+    height: auto;
+    border-radius: 1rem 0 0 1rem;
+
+}
+
+.Pop-desc {
+    margin-left: 0.5rem;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pop-desc .étoile {
+    margin-top: auto;
+}
+
+.mod-pop {
+    max-height: 10rem;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Card:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* Activités */
+
+
+.Act-card img {
+    height: 400px;
+}
+
+
+
+.wrapAct {
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+}
+
+.Act-card {
+    width: 100%;
+    box-shadow: 0 0 20px #0000002e;
+    background-color: transparent;
+    border-radius: 1rem;
+    /* background-color: #d9d9d9; */
+}
+
+.Act-card h3 {
+    margin: 1.2rem;
+    padding-left: 15px;
+
+}
+
+.Activités img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+footer div {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/* MEDIA SCREEN */
+
+
+
+@media screen and (max-width: 1200px) {
+    .Appart-liste {
+        flex-direction: column;
+
+    }
+
+    .Appart-cards {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Appart-liste .Populaire-cards {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    p.étoile {
+        zoom: 85%;
+        min-width: 103px;
+    }
+
+    .Pop-desc h3,
+    p {
+        zoom: 85%;
+
+    }
+
+    .ville .Card {
+        width: 100%;
+    }
+
+    .Appart-cards {
+        /* flex-direction: column; */
+        gap: 1.5rem;
+    }
+
+    /* Activités  */
+
+
+    .wrapAct {
+        zoom: 85%;
+    }
+
+    .Activités img {
+
+        height: 20rem;
+        object-fit: cover;
+    }
+
+}
+/* TABLETTE */
+
+@media screen and (max-width: 1024px) {
+    .Appart-liste {
+        flex-direction: column;
+
+    }
+
+    .Appart-liste .Populaire-cards {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    p.étoile {
+        zoom: 85%;
+    }
+
+    .Pop-desc h3 p {
+        zoom: 85%;
+
+    }
+
+    .ville .Card {
+        width: 100%;
+    }
+
+    .Appart-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    /* Activités  */
+
+
+    .wrapAct {
+        zoom: 85%;
+    }
+
+    .Activités img {
+
+        height: 20rem;
+        object-fit: cover;
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width:768px) {
+
+    .btn-noloop {
+        display: none;
+    }
+
+    .btn-loop {
+        display: block;
+        width: 40px;
+        /* padding: auto; */
+
+    }
+
+    .btn-loop i {
+
+        padding: 6px;
+        padding-left: 4px;
+
+    }
+
+    .Appart-liste {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .Appart-liste .Populaire-cards {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .Card {
+        max-width: none;
+    }
+
+    /* .Appart-cards{
+            flex-direction: column;
+        } */
+    .Card .mod-pop {
+        width: 100%;
+    }
+
+
+
+    .wrapAct {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+
+    nav#menu {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    a.lien {
+        color: black;
+        margin: 0;
+        border-bottom: 1px solid #d9d9d9;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .opt {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* width: 128px; */
+        border-bottom: 1px solid #d9d9d9;
+
+    }
+
+    a.lien:hover {
+        border-bottom: 1px solid #0065FC;
+        border-top: 0px;
+    }
+
+
+
+    .search {
+
+        width: 100%;
+    }
+
+    .search form {
+        /* justify-content: center; */
+        width: 100%;
+    }
+
+    .ece,
+    .ecef {
+        width: 152px;
+        height: 41px;
+    }
+
+    #filtres {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #filtres .ece,
+    .ecef {
+        margin: 5px;
+
+    }
+
+    div.tst{
+        width: 450px;
+    }
+
+
+    footer div {
+        margin-left: 15px;
+    }
+
+
+
+}
